@@ -48,7 +48,6 @@ def remove_chastisements(schoolkid):
     chastisements_kid.delete()
 
 
-# 19
 def create_commendation(child, subject_lesson):
     lessons = Lesson.objects.filter(subject__title=subject_lesson). \
         order_by('-date')
